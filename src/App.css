@@ -6,6 +6,6 @@
   /* background-color: red; */
   display: grid;
   gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
 }
 
