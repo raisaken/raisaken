@@ -1,7 +1,7 @@
 .Iframe {
   display: initial;
   position: relative;
-  width: 100%;
+  width: 50%;
   height: 50em;
   border-radius: 10px;
 }
