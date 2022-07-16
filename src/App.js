@@ -1,19 +1,40 @@
-import "./App.css";
 import ProjectCard from "./Components/Card/ProjectCard";
 
+import { Button, Col, Container, Row } from "react-bootstrap";
+const items = [
+  {
+    id: 1,
+    url: "https://www.vibeseducation.com/",
+  },
+  {
+    id: 2,
+    url: "https://strong-sunflower-ff499e.netlify.app/",
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <h3>
-        <a href="mailto: saken.rai.34@gmail.com">Send Email</a>
-      </h3>
+    <Container style={{ marginTop: "50px" }}>
+      <Button 
+      variant="outline-primary"
+      >
+        {" "}
+        <a href="mailto: saken.rai.34@gmail.com">
+          Contact
+        </a>
+      </Button>
+
       <h1>Projects</h1>
-      <div className="Projects">
-        <ProjectCard url={"https://www.vibeseducation.com/"} />
-        <ProjectCard url={"https://strong-sunflower-ff499e.netlify.app/"} />
-      </div>
-    </div>
+      <Row>
+        {items.map((item) => {
+          return (
+            <Col md={6}>
+              <ProjectCard key={item.id} url={item.url} />
+            </Col>
+          );
+        })}
+      </Row>
+    </Container>
   );
 }
 
