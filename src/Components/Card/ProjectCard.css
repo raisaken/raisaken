@@ -2,6 +2,9 @@
   display: initial;
   position: relative;
   width: 100%;
-  height: 50em;
+  height: 25em;
   border-radius: 10px;
+}
+.Iframe>:nth-child(1){
+  overflow-x: hidden;
 }

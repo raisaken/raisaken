@@ -4,13 +4,29 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './star.js';
-import Webgl from './Webgl.js';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: 
+        <App />
+    ,
+  },
+  {
+    path: "about",
+    element: <div>About</div>,
+  },
+]);
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Webgl/>
+    <RouterProvider router={router} />
   </React.StrictMode>,
   document.getElementById('root')
 );
