@@ -10,7 +10,7 @@ function Welcome() {
         fontSize:'5em'
     }
   return (
-    <div style={body_style}>Hi ! Welcome to my world.</div>
+    <div style={body_style}>Hi !</div>
   )
 }
 
