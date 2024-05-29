@@ -1,6 +1,6 @@
 import ProjectCard from "./Components/Card/ProjectCard";
 
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Welcome from "./Components/Card/Welcome/Welcome";
 
 
