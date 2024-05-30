@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/raisaken/static/css/main.c800083c.css",
+    "main.js": "/raisaken/static/js/main.d83fb83e.js",
+    "static/js/787.11c74e46.chunk.js": "/raisaken/static/js/787.11c74e46.chunk.js",
+    "index.html": "/raisaken/index.html",
+    "main.c800083c.css.map": "/raisaken/static/css/main.c800083c.css.map",
+    "main.d83fb83e.js.map": "/raisaken/static/js/main.d83fb83e.js.map",
+    "787.11c74e46.chunk.js.map": "/raisaken/static/js/787.11c74e46.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c800083c.css",
+    "static/js/main.d83fb83e.js"
+  ]
+}
