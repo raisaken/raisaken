@@ -1,7 +1,7 @@
 {
   "name": "raisaken",
   "version": "0.1.0",
-  "homepage": "https://raisaken.com.np/",
+  "homepage": "https://raisaken.github.io/raisaken",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
