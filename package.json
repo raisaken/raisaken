@@ -2,7 +2,7 @@
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://raisaken.github.io/my-react-app",
+  "homepage": "https://raisaken.github.io/raisaken",
   "type": "module",
   "scripts": {
     "dev": "vite",
