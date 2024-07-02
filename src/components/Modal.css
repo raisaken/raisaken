@@ -1,0 +1,98 @@
+/* Modal overlay with background blur */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Modal container with shadow and rounded corners */
+  .modal {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    animation: slideIn 0.4s ease-in-out;
+  }
+  
+  /* Headings and text alignment */
+  .modal h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styled input field */
+  .modal input {
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Button styling */
+  .modal button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .modal button:hover {
+    background: #39abaf;
+  }
+  
+  .modal button:active {
+    background: #ddd;
+  }
+  
+  /* Specific button colors */
+  .modal button:nth-child(2) {
+    background: #007bff;
+    color: white;
+  }
+  
+  .modal button:nth-child(2):hover {
+    background: #0056b3;
+  }
+  
+  .modal button:nth-child(2):active {
+    background: #004494;
+  }
+  
+  /* Animation for overlay */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation for modal */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
