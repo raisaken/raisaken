@@ -16,12 +16,12 @@ export default function Modal({ show, onClose, onSubmit }) {
     return (
       <div className="modal-overlay">
         <div className="modal">
-          <h2>Enter Something</h2>
+          <h2>Enter a number</h2>
           <input
             type="text"
             value={modalInput}
             onChange={(e) => setModalInput(e.target.value)}
-            placeholder="Enter text here"
+            placeholder="Enter a number here"
           />
           <button onClick={handleSubmit}>Submit</button>
           <button onClick={onClose}>Close</button>

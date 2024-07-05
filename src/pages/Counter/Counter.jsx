@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Modal from './components/Modal'
+import "./Counter.css"
+import Modal from '../../components/Modal';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -41,7 +42,6 @@ function App() {
         </button>
       </div>
       <Modal show={isModalOpen} onClose={handleCloseModal} onSubmit={handleModalSubmit} />
-      
     </>
   )
 }
