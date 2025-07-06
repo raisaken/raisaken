@@ -13,6 +13,16 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "How to create Professional Github Readme Profile (Step By Step)",
+      excerpt: "Create Github Readme Profile using Github Profile readme Generator for Professional looking Github Resume. In this Blog we will learn to create next level Github profile using online github readme profile Generator. Having a professional Github portfolio can help you a lot to showcase your skills, add contacts and even get a remote Jobs.",
+      category: "Git",
+      date: "2025-07-06",
+      readTime: "2 min read",
+      tags: ["Tools & Utilities","Open Source","Web Development", "DevOps", "Git", "Documentation", "Project Management","Beginner Tutorials"],
+      image: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/github-profile-readme-generator.gif"
+    },
+    {
+      id: 10,
       title: "Building Scalable AI Applications with React and TensorFlow",
       excerpt: "Learn how to integrate machine learning models into React applications for real-time predictions and data processing.",
       category: "AI/ML",
@@ -22,7 +32,7 @@ const Blog = () => {
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=600&h=300"
     },
     {
-      id: 2,
+      id: 20,
       title: "Advanced Dynamic Programming Techniques for Competitive Programming",
       excerpt: "Deep dive into complex DP patterns and optimization techniques used in competitive programming contests.",
       category: "Algorithms",
@@ -32,7 +42,7 @@ const Blog = () => {
       image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=600&h=300"
     },
     {
-      id: 3,
+      id: 30,
       title: "Modern React Patterns: From Hooks to Server Components",
       excerpt: "Exploring the latest React patterns and best practices for building maintainable applications in 2024.",
       category: "Web Development",
@@ -42,7 +52,7 @@ const Blog = () => {
       image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&h=300"
     },
     {
-      id: 4,
+      id: 40,
       title: "Natural Language Processing with Transformers",
       excerpt: "Understanding transformer architecture and implementing NLP models for text classification and generation.",
       category: "AI/ML",
@@ -52,7 +62,7 @@ const Blog = () => {
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&h=300"
     },
     {
-      id: 5,
+      id: 50,
       title: "System Design: Building Distributed Systems at Scale",
       excerpt: "Key principles and patterns for designing scalable distributed systems with real-world examples.",
       category: "System Design",
@@ -63,7 +73,7 @@ const Blog = () => {
     }
   ];
 
-  const categories = ["All", "AI/ML", "Algorithms", "Web Development", "System Design"];
+  const categories = ["All", "AI/ML", "Algorithms", "Web Development", "System Design","Git"];
 
   const filteredPosts = selectedCategory === "All" 
     ? blogPosts 
@@ -122,7 +132,7 @@ const Blog = () => {
                       <img
                         src={post.image}
                         alt={post.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
                     <CardHeader>

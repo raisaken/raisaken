@@ -1,4 +1,3 @@
-
 import { useParams, Link } from "react-router-dom";
 import { Header } from "@/components/portfolio/Header";
 import { Footer } from "@/components/portfolio/Footer";
@@ -13,6 +12,40 @@ const BlogPost = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "How to create Professional Github Readme Profile (Step By Step)",
+      content: (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `Create Github Readme Profile using Github Profile readme Generator for Professional looking Github Resume. In this Blog we will learn How to create next level Github profile using online github readme profile Generator. Having a professional Github portfolio can help you a lot to showcase your skills, add contacts and even get a remote Jobs.
+     
+            Github Readme Generator: <a style="color: blue;" href="https://rahuldkjain.github.io/gh-profile-readme-generator/" target="_blank">https://rahuldkjain.github.io/gh-profile-readme-generator/</a>
+     
+      Github Profile Readme Generator: <a style="color: blue;" href=" https://profile-readme-generator.com/" target="_blank"> https://profile-readme-generator.com/</a>
+     
+      Github Repo with all cool Portfolio: <a style="color: blue;" href="https://github.com/abhisheknaiidu/awesome-github-profile-readme" target="_blank">https://github.com/abhisheknaiidu/awesome-github-profile-readme</a>
+      
+      `,
+          }}
+        />
+      ),
+      category: "Git",
+      date: "2025-07-06",
+      readTime: "2 min read",
+      tags: [
+        "Tools & Utilities",
+        "Open Source",
+        "Web Development",
+        "DevOps",
+        "Git",
+        "Documentation",
+        "Project Management",
+        "Beginner Tutorials",
+      ],
+      image:
+        "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/github-profile-readme-generator.gif",
+    },
+    {
+      id: 10,
       title: "Building Scalable AI Applications with React and TensorFlow",
       content: `
 # Introduction
@@ -100,11 +133,13 @@ Integrating AI into React applications opens up endless possibilities for creati
       date: "2024-01-15",
       readTime: "8 min read",
       tags: ["React", "TensorFlow", "Machine Learning"],
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&h=600"
+      image:
+        "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&h=600",
     },
     {
       id: 2,
-      title: "Advanced Dynamic Programming Techniques for Competitive Programming",
+      title:
+        "Advanced Dynamic Programming Techniques for Competitive Programming",
       content: `
 # Mastering Dynamic Programming
 
@@ -194,11 +229,12 @@ Mastering these advanced DP techniques will significantly improve your competiti
       date: "2024-01-10",
       readTime: "12 min read",
       tags: ["Algorithms", "Dynamic Programming", "LeetCode"],
-      image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=1200&h=600"
-    }
+      image:
+        "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=1200&h=600",
+    },
   ];
 
-  const post = blogPosts.find(p => p.id === parseInt(id || "1"));
+  const post = blogPosts.find((p) => p.id === parseInt(id || "1"));
 
   if (!post) {
     return (
@@ -225,7 +261,7 @@ Mastering these advanced DP techniques will significantly improve your competiti
           url: shareUrl,
         });
       } catch (error) {
-        console.log('Error sharing:', error);
+        console.log("Error sharing:", error);
       }
     } else {
       navigator.clipboard.writeText(shareUrl);
@@ -236,20 +272,20 @@ Mastering these advanced DP techniques will significantly improve your competiti
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <Header />
-      
+
       <main className="pt-20">
         {/* Hero Section */}
         <section className="py-16 bg-white dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <Link 
-                to="/blog" 
+              <Link
+                to="/blog"
                 className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 mb-8"
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Back to Blog
               </Link>
-              
+
               <div className="mb-6">
                 <Badge variant="secondary" className="mb-4">
                   {post.category}
@@ -257,15 +293,15 @@ Mastering these advanced DP techniques will significantly improve your competiti
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white mb-6">
                   {post.title}
                 </h1>
-                
+
                 <div className="flex items-center justify-between flex-wrap gap-4 mb-8">
                   <div className="flex items-center space-x-6 text-gray-600 dark:text-gray-300">
                     <div className="flex items-center">
                       <Calendar className="w-4 h-4 mr-2" />
-                      {new Date(post.date).toLocaleDateString('en-US', {
-                        year: 'numeric',
-                        month: 'long',
-                        day: 'numeric'
+                      {new Date(post.date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
                       })}
                     </div>
                     <div className="flex items-center">
@@ -273,7 +309,7 @@ Mastering these advanced DP techniques will significantly improve your competiti
                       {post.readTime}
                     </div>
                   </div>
-                  
+
                   <Button
                     onClick={handleShare}
                     variant="outline"
@@ -284,7 +320,7 @@ Mastering these advanced DP techniques will significantly improve your competiti
                     Share
                   </Button>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2 mb-8">
                   {post.tags.map((tag) => (
                     <Badge key={tag} variant="outline">
@@ -293,12 +329,12 @@ Mastering these advanced DP techniques will significantly improve your competiti
                   ))}
                 </div>
               </div>
-              
+
               <div className="aspect-video overflow-hidden rounded-lg mb-8">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
@@ -310,9 +346,9 @@ Mastering these advanced DP techniques will significantly improve your competiti
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="prose prose-lg dark:prose-invert max-w-none">
-                <div 
+                <div
                   className="text-gray-700 dark:text-gray-300 leading-relaxed"
-                  style={{ whiteSpace: 'pre-line' }}
+                  style={{ whiteSpace: "pre-line" }}
                 >
                   {post.content}
                 </div>
@@ -329,12 +365,11 @@ Mastering these advanced DP techniques will significantly improve your competiti
                 Enjoyed this article?
               </h3>
               <p className="text-gray-600 dark:text-gray-300 mb-8">
-                Check out more articles on software engineering, AI/ML, and competitive programming.
+                Check out more articles on software engineering, AI/ML, and
+                competitive programming.
               </p>
               <Link to="/blog">
-                <Button size="lg">
-                  View More Articles
-                </Button>
+                <Button size="lg">View More Articles</Button>
               </Link>
             </div>
           </div>

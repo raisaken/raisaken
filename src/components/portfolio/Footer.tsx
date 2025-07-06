@@ -69,7 +69,6 @@ export const Footer = () => {
                 </li>
               </ul>
             </div>
-            
             <div>
               <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
               <p className="text-gray-300 mb-2">saken.rai.34@gmail.com</p>
