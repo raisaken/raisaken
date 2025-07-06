@@ -8,14 +8,14 @@ export const Footer = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-2xl font-bold mb-4">John Doe</h3>
+              <h3 className="text-2xl font-bold mb-4">Saken Rai</h3>
               <p className="text-gray-300 mb-4">
                 Software Engineer & Aspiring AI Engineer passionate about creating 
                 innovative solutions and solving complex problems.
               </p>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/raisaken"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
@@ -23,7 +23,7 @@ export const Footer = () => {
                   <Github className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/raisaken"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
@@ -31,7 +31,7 @@ export const Footer = () => {
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a
-                  href="mailto:john.doe@email.com"
+                  href="mailto:saken.rai.34@gmail.com"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   <Mail className="w-6 h-6" />
@@ -72,15 +72,15 @@ export const Footer = () => {
             
             <div>
               <h4 className="text-lg font-semibold mb-4">Get In Touch</h4>
-              <p className="text-gray-300 mb-2">john.doe@email.com</p>
-              <p className="text-gray-300 mb-4">+1 (555) 123-4567</p>
-              <p className="text-gray-300">San Francisco, CA</p>
+              <p className="text-gray-300 mb-2">saken.rai.34@gmail.com</p>
+              {/* <p className="text-gray-300 mb-4">+1 (555) 123-4567</p> */}
+              <p className="text-gray-300">East London, UK</p>
             </div>
           </div>
           
           <div className="border-t border-gray-700 mt-8 pt-8 text-center">
             <p className="text-gray-300 flex items-center justify-center">
-              Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> by John Doe
+              Made with <Heart className="w-4 h-4 mx-1 text-red-500" /> by Saken Rai
             </p>
             <p className="text-gray-400 text-sm mt-2">
               © 2024 All rights reserved.

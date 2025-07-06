@@ -54,11 +54,11 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 dark:text-white">Email</h4>
-                    <p className="text-gray-600 dark:text-gray-300">john.doe@email.com</p>
+                    <p className="text-gray-600 dark:text-gray-300">saken.rai.34@gmail.com</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center space-x-4">
+                {/* <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center">
                     <Phone className="w-6 h-6 text-green-600 dark:text-green-400" />
                   </div>
@@ -66,7 +66,7 @@ export const Contact = () => {
                     <h4 className="font-semibold text-gray-800 dark:text-white">Phone</h4>
                     <p className="text-gray-600 dark:text-gray-300">+1 (555) 123-4567</p>
                   </div>
-                </div>
+                </div> */}
                 
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center">
@@ -74,7 +74,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 dark:text-white">Location</h4>
-                    <p className="text-gray-600 dark:text-gray-300">San Francisco, CA</p>
+                    <p className="text-gray-600 dark:text-gray-300">East London, UK</p>
                   </div>
                 </div>
               </div>
@@ -125,7 +125,7 @@ export const Contact = () => {
                     />
                   </div>
                   
-                  <Button type="submit" className="w-full">
+                  <Button type="submit" className="w-full" disabled>
                     <Send className="w-4 h-4 mr-2" />
                     Send Message
                   </Button>

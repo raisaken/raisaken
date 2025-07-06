@@ -28,7 +28,7 @@ export const About = () => {
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                 My journey in tech started with a curiosity about how things work, which led me to explore 
                 programming and eventually fall in love with problem-solving. I'm particularly drawn to 
-                algorithmic challenges and have solved over 500 problems on LeetCode.
+                algorithmic challenges and have solved over 100 problems on LeetCode.
               </p>
               
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
@@ -39,7 +39,7 @@ export const About = () => {
 
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="text-center p-4 bg-blue-50 dark:bg-gray-800 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">500+</div>
+                  <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">100+</div>
                   <div className="text-gray-600 dark:text-gray-300">LeetCode Solved</div>
                 </div>
                 <div className="text-center p-4 bg-green-50 dark:bg-gray-800 rounded-lg">

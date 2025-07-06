@@ -4,28 +4,28 @@ import { Calendar, MapPin } from "lucide-react";
 export const Experience = () => {
   const experiences = [
     {
-      title: "Senior Software Engineer",
-      company: "Tech Innovations Inc.",
-      period: "2022 - Present",
-      location: "San Francisco, CA",
-      description: "Led development of scalable web applications using React and Node.js. Implemented AI-powered features that improved user engagement by 40%. Mentored junior developers and contributed to architectural decisions.",
-      technologies: ["React", "Node.js", "Python", "AWS", "MongoDB"]
+      title: "Software Engineer",
+      company: "CedarGate Services",
+      period: "2023 - 2024",
+      location: "Kathmandu, Nepal",
+      description: "Wrote industry-standard bug fixes for EZ-Cap. Analyzed existing systems written in Java, produced estimates, and modified them according to requirements. Performed code reviews, debugged and fixed software defects",
+      technologies: ["React", "Node.js", "Java","PostGreSQL", "AWS", "Jira"]
     },
     {
-      title: "Full Stack Developer",
-      company: "StartupXYZ",
-      period: "2021 - 2022",
-      location: "Remote",
-      description: "Developed and maintained multiple client projects using modern web technologies. Built RESTful APIs and integrated third-party services. Collaborated with cross-functional teams to deliver high-quality solutions.",
-      technologies: ["Vue.js", "Express.js", "PostgreSQL", "Docker", "GitLab CI"]
+      title: "Software Developer - B",
+      company: "Great Bear Tech",
+      period: "2022 - 2023",
+      location: "Kathmandu, Nepal",
+      description: "Optimized existing projects and new projects as per client requirements. Implemented interactive design to achieve client needs. Collaborated with other developers to fix bugs and add features as needed",
+      technologies: ["Javascript", "Reactjs", "Nextjs", "PostgreSQL", "GitLab"]
     },
     {
       title: "Software Developer Intern",
-      company: "Global Tech Solutions",
-      period: "2020 - 2021",
-      location: "New York, NY",
-      description: "Contributed to the development of enterprise software solutions. Participated in code reviews and learned best practices for software development. Gained experience with agile methodologies and version control.",
-      technologies: ["Java", "Spring Boot", "MySQL", "Angular", "Jenkins"]
+      company: "Samsara - Project",
+      period: "2022 - 2024",
+      location: "Remote",
+      description: "Developed and implemented front-end code to implement UI designs. Optimized Samsara(webapp) Core Web Vitals metrics, increasing the Lighthouse performance score from 48% to 78%. Collaborated with back-end developers to integrate backend code.",
+      technologies: ["Javascript", "MySQL", "Reactjs", "Nextjs" , "Remix", "Socket.io", "Github"]
     }
   ];
 

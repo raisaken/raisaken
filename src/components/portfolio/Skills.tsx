@@ -7,36 +7,36 @@ export const Skills = () => {
       title: "Software Engineering",
       icon: <Code className="w-8 h-8" />,
       skills: [
-        { name: "JavaScript/TypeScript", level: 90 },
-        { name: "React/Next.js", level: 85 },
-        { name: "Node.js", level: 80 },
-        { name: "Python", level: 85 },
-        { name: "Java", level: 75 },
-        { name: "SQL/NoSQL", level: 80 }
+        { name: "JavaScript/TypeScript", level: 80 },
+        { name: "React/Next.js", level: 75 },
+        { name: "Node.js", level: 50 },
+        { name: "Python", level: 55 },
+        { name: "Java", level: 45 },
+        { name: "SQL/NoSQL", level: 60 }
       ]
     },
     {
       title: "AI/ML",
       icon: <Brain className="w-8 h-8" />,
       skills: [
-        { name: "TensorFlow/PyTorch", level: 70 },
-        { name: "Scikit-learn", level: 75 },
-        { name: "Natural Language Processing", level: 65 },
-        { name: "Computer Vision", level: 60 },
-        { name: "Deep Learning", level: 70 },
-        { name: "Data Analysis", level: 80 }
+        { name: "TensorFlow/PyTorch", level: 20 },
+        { name: "Scikit-learn", level: 25 },
+        { name: "Natural Language Processing", level: 15 },
+        { name: "Computer Vision", level: 10 },
+        { name: "Deep Learning", level: 20 },
+        { name: "Data Analysis", level: 30 }
       ]
     },
     {
       title: "Tools & Technologies",
       icon: <Wrench className="w-8 h-8" />,
       skills: [
-        { name: "Git/GitHub", level: 90 },
-        { name: "Docker", level: 75 },
-        { name: "AWS/Cloud", level: 70 },
-        { name: "Linux", level: 80 },
-        { name: "CI/CD", level: 75 },
-        { name: "Agile/Scrum", level: 85 }
+        { name: "Git/GitHub", level: 80 },
+        { name: "Docker", level: 65 },
+        { name: "AWS/Cloud", level: 50 },
+        { name: "Linux", level: 40 },
+        { name: "CI/CD", level: 55 },
+        { name: "Agile/Scrum", level: 55 }
       ]
     }
   ];

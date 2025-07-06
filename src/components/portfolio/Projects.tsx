@@ -6,53 +6,53 @@ import { Github, ExternalLink } from "lucide-react";
 export const Projects = () => {
   const projects = [
     {
-      title: "AI-Powered Code Review Assistant",
-      description: "A machine learning tool that analyzes code and provides intelligent suggestions for improvements, bug detection, and code quality enhancement.",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&h=300",
-      tags: ["Python", "TensorFlow", "NLP", "FastAPI"],
-      github: "https://github.com/yourusername/ai-code-review",
-      demo: "https://ai-code-review-demo.vercel.app"
+      title: "Document Encryption Using AES Algorithm",
+      description: "This mobile app encrypts and decrypts a file using AES 256 cbc mode. It has two features i.e encryption-decryption and transfer encrypted file using the chat. We had used three features of firebase ie. firebase authentication,cloud firestore and storage. login is done with the help of firebase authentication package. Here in this project cloud firestore is used to store chat along with storage feature of firebase to store the files send between two clients. This app was built by three members as last semester college project.",
+      image: "./encryption.jpg",
+      tags: ["Dart","Flutter", "AES Algorithm", "Firebase", "FastAPI"],
+      github: "https://github.com/Sahilramjali/encryption-decryption-flutter",
+      demo: "https://github.com/Sahilramjali/encryption-decryption-flutter"
     },
-    {
-      title: "Real-time Chat Application",
-      description: "A full-stack chat application with real-time messaging, file sharing, and video calling capabilities built with modern web technologies.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=600&h=300",
-      tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "https://github.com/yourusername/realtime-chat",
-      demo: "https://realtime-chat-demo.vercel.app"
-    },
-    {
-      title: "LeetCode Problem Tracker",
-      description: "A comprehensive dashboard to track LeetCode problem-solving progress with analytics, patterns recognition, and performance insights.",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&h=300",
-      tags: ["Next.js", "TypeScript", "Chart.js", "PostgreSQL"],
-      github: "https://github.com/yourusername/leetcode-tracker",
-      demo: "https://leetcode-tracker-demo.vercel.app"
-    },
-    {
-      title: "E-commerce Platform",
-      description: "A scalable e-commerce solution with microservices architecture, payment integration, and advanced search capabilities.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&h=300",
-      tags: ["React", "Java Spring", "MySQL", "Docker"],
-      github: "https://github.com/yourusername/ecommerce-platform",
-      demo: "https://ecommerce-demo.vercel.app"
-    },
-    {
-      title: "Smart Home IoT Dashboard",
-      description: "An IoT dashboard for monitoring and controlling smart home devices with real-time data visualization and automation features.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&h=300",
-      tags: ["Vue.js", "Python", "MQTT", "InfluxDB"],
-      github: "https://github.com/yourusername/smart-home-dashboard",
-      demo: "https://smart-home-demo.vercel.app"
-    },
-    {
-      title: "Neural Network Visualizer",
-      description: "An interactive web application for visualizing neural network architectures and training processes in real-time.",
-      image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=600&h=300",
-      tags: ["D3.js", "Python Flask", "TensorFlow", "WebSocket"],
-      github: "https://github.com/yourusername/neural-network-viz",
-      demo: "https://neural-network-viz.vercel.app"
-    }
+    // {
+    //   title: "Real-time Chat Application",
+    //   description: "A full-stack chat application with real-time messaging, file sharing, and video calling capabilities built with modern web technologies.",
+    //   image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=600&h=300",
+    //   tags: ["React", "Node.js", "Socket.io", "MongoDB"],
+    //   github: "https://github.com/yourusername/realtime-chat",
+    //   demo: "https://realtime-chat-demo.vercel.app"
+    // },
+    // {
+    //   title: "LeetCode Problem Tracker",
+    //   description: "A comprehensive dashboard to track LeetCode problem-solving progress with analytics, patterns recognition, and performance insights.",
+    //   image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&h=300",
+    //   tags: ["Next.js", "TypeScript", "Chart.js", "PostgreSQL"],
+    //   github: "https://github.com/yourusername/leetcode-tracker",
+    //   demo: "https://leetcode-tracker-demo.vercel.app"
+    // },
+    // {
+    //   title: "E-commerce Platform",
+    //   description: "A scalable e-commerce solution with microservices architecture, payment integration, and advanced search capabilities.",
+    //   image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&h=300",
+    //   tags: ["React", "Java Spring", "MySQL", "Docker"],
+    //   github: "https://github.com/yourusername/ecommerce-platform",
+    //   demo: "https://ecommerce-demo.vercel.app"
+    // },
+    // {
+    //   title: "Smart Home IoT Dashboard",
+    //   description: "An IoT dashboard for monitoring and controlling smart home devices with real-time data visualization and automation features.",
+    //   image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&h=300",
+    //   tags: ["Vue.js", "Python", "MQTT", "InfluxDB"],
+    //   github: "https://github.com/yourusername/smart-home-dashboard",
+    //   demo: "https://smart-home-demo.vercel.app"
+    // },
+    // {
+    //   title: "Neural Network Visualizer",
+    //   description: "An interactive web application for visualizing neural network architectures and training processes in real-time.",
+    //   image: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&w=600&h=300",
+    //   tags: ["D3.js", "Python Flask", "TensorFlow", "WebSocket"],
+    //   github: "https://github.com/yourusername/neural-network-viz",
+    //   demo: "https://neural-network-viz.vercel.app"
+    // }
   ];
 
   return (

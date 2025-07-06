@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, GitBranch, Star, Users } from "lucide-react";
 import { ContributionChart } from "./ContributionChart";
@@ -11,11 +10,13 @@ export const GitHubStats = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-center text-gray-800 dark:text-white mb-12">
             GitHub Activity
           </h2>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Total Repositories</CardTitle>
+                <CardTitle className="text-sm font-medium">
+                  Total Repositories
+                </CardTitle>
                 <Github className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
@@ -25,10 +26,12 @@ export const GitHubStats = () => {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Total Stars</CardTitle>
+                <CardTitle className="text-sm font-medium">
+                  Total Stars
+                </CardTitle>
                 <Star className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
@@ -38,7 +41,7 @@ export const GitHubStats = () => {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                 <CardTitle className="text-sm font-medium">Followers</CardTitle>
@@ -51,22 +54,27 @@ export const GitHubStats = () => {
                 </p>
               </CardContent>
             </Card>
-            
+
             <Card>
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Contributions</CardTitle>
+                <CardTitle className="text-sm font-medium">
+                  Contributions
+                </CardTitle>
                 <GitBranch className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
                 <div className="text-2xl font-bold">2,847</div>
-                <p className="text-xs text-muted-foreground">
-                  This year
-                </p>
+                <p className="text-xs text-muted-foreground">This year</p>
               </CardContent>
             </Card>
           </div>
-          
-          <ContributionChart 
+          <iframe
+            src="https://github.com/users/raisaken/contributions"
+            width="930"
+            height="100"
+            title="GitHub Contributions"
+          ></iframe>
+          <ContributionChart
             title="GitHub Contributions"
             data={[]}
             type="github"
