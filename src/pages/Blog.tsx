@@ -22,6 +22,55 @@ const Blog = () => {
       image: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/github-profile-readme-generator.gif"
     },
     {
+      id: 2,
+      title: "AI engineer Roadmap",
+      excerpt: "AI engineer Roadmap",
+      category: "AI/ML",
+      date: "2024-07-11",
+      readTime: "2 min read",
+      tags: ["Deep Learning", "Machine Learning"],
+      image:"https://s3.mordorintelligence.com/global-artificial-intelligence-market/global-artificial-intelligence-market-Artificial-Intelligence-Market-Market-Share-by-Technology-2024-1751520031125.webp"
+    },
+    // {
+    //   id: 10,
+    //   title: "",
+    //   excerpt: "",
+    //   category: "AI/ML",
+    //   date: "2024-07-11",
+    //   readTime: "2 min read",
+    //   tags: ["Deep Learning", "Machine Learning"],
+    //   image:""
+    // },
+    // {
+    //   id: 10,
+    //   title: "",
+    //   excerpt: "",
+    //   category: "AI/ML",
+    //   date: "2024-07-11",
+    //   readTime: "2 min read",
+    //   tags: ["Deep Learning", "Machine Learning"],
+    //   image:""
+    // },
+    // {
+    //   id: 10,
+    //   title: "",
+    //   excerpt: "",
+    //   category: "AI/ML",
+    //   date: "2024-07-11",
+    //   readTime: "2 min read",
+    //   tags: ["Deep Learning", "Machine Learning"],
+    //   image:""
+    // },{
+    //   id: 10,
+    //   title: "",
+    //   excerpt: "",
+    //   category: "AI/ML",
+    //   date: "2024-07-11",
+    //   readTime: "2 min read",
+    //   tags: ["Deep Learning", "Machine Learning"],
+    //   image:""
+    // },
+    {
       id: 10,
       title: "Building Scalable AI Applications with React and TensorFlow",
       excerpt: "Learn how to integrate machine learning models into React applications for real-time predictions and data processing.",

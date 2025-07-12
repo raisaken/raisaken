@@ -44,6 +44,24 @@ const BlogPost = () => {
       image:
         "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/github-profile-readme-generator.gif",
     },
+    {id: 2,
+      title: "AI engineer Roadmap",
+      content: (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `Python -> Math(Linear Algebra, Calculsus, Stat and Probability ) -> ML/DL -> TensorFlow, PyTorch, scikit-learn -> Projects`,
+          }}
+        />
+      ),
+      category: "AI/ML",
+      date: "2025-07-11",
+      readTime: "2 min read",
+      tags: [
+        "Machine Learning",
+        "Deep Learning",
+      ],
+      image:"https://i.imghippo.com/files/mJM9533eUo.png"
+    },
     {
       id: 10,
       title: "Building Scalable AI Applications with React and TensorFlow",
