@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Header } from "@/components/portfolio/Header";
@@ -14,12 +13,23 @@ const Blog = () => {
     {
       id: 1,
       title: "How to create Professional Github Readme Profile (Step By Step)",
-      excerpt: "Create Github Readme Profile using Github Profile readme Generator for Professional looking Github Resume. In this Blog we will learn to create next level Github profile using online github readme profile Generator. Having a professional Github portfolio can help you a lot to showcase your skills, add contacts and even get a remote Jobs.",
+      excerpt:
+        "Create Github Readme Profile using Github Profile readme Generator for Professional looking Github Resume. In this Blog we will learn to create next level Github profile using online github readme profile Generator. Having a professional Github portfolio can help you a lot to showcase your skills, add contacts and even get a remote Jobs.",
       category: "Git",
       date: "2025-07-06",
       readTime: "2 min read",
-      tags: ["Tools & Utilities","Open Source","Web Development", "DevOps", "Git", "Documentation", "Project Management","Beginner Tutorials"],
-      image: "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/github-profile-readme-generator.gif"
+      tags: [
+        "Tools & Utilities",
+        "Open Source",
+        "Web Development",
+        "DevOps",
+        "Git",
+        "Documentation",
+        "Project Management",
+        "Beginner Tutorials",
+      ],
+      image:
+        "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/github-profile-readme-generator.gif",
     },
     {
       id: 2,
@@ -29,7 +39,7 @@ const Blog = () => {
       date: "2024-07-11",
       readTime: "2 min read",
       tags: ["Deep Learning", "Machine Learning"],
-      image:"https://s3.mordorintelligence.com/global-artificial-intelligence-market/global-artificial-intelligence-market-Artificial-Intelligence-Market-Market-Share-by-Technology-2024-1751520031125.webp"
+      image: "https://i.imghippo.com/files/mJM9533eUo.png",
     },
     // {
     //   id: 10,
@@ -41,97 +51,26 @@ const Blog = () => {
     //   tags: ["Deep Learning", "Machine Learning"],
     //   image:""
     // },
-    // {
-    //   id: 10,
-    //   title: "",
-    //   excerpt: "",
-    //   category: "AI/ML",
-    //   date: "2024-07-11",
-    //   readTime: "2 min read",
-    //   tags: ["Deep Learning", "Machine Learning"],
-    //   image:""
-    // },
-    // {
-    //   id: 10,
-    //   title: "",
-    //   excerpt: "",
-    //   category: "AI/ML",
-    //   date: "2024-07-11",
-    //   readTime: "2 min read",
-    //   tags: ["Deep Learning", "Machine Learning"],
-    //   image:""
-    // },{
-    //   id: 10,
-    //   title: "",
-    //   excerpt: "",
-    //   category: "AI/ML",
-    //   date: "2024-07-11",
-    //   readTime: "2 min read",
-    //   tags: ["Deep Learning", "Machine Learning"],
-    //   image:""
-    // },
-    {
-      id: 10,
-      title: "Building Scalable AI Applications with React and TensorFlow",
-      excerpt: "Learn how to integrate machine learning models into React applications for real-time predictions and data processing.",
-      category: "AI/ML",
-      date: "2024-01-15",
-      readTime: "8 min read",
-      tags: ["React", "TensorFlow", "Machine Learning"],
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=600&h=300"
-    },
-    {
-      id: 20,
-      title: "Advanced Dynamic Programming Techniques for Competitive Programming",
-      excerpt: "Deep dive into complex DP patterns and optimization techniques used in competitive programming contests.",
-      category: "Algorithms",
-      date: "2024-01-10",
-      readTime: "12 min read",
-      tags: ["Algorithms", "Dynamic Programming", "LeetCode"],
-      image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=600&h=300"
-    },
-    {
-      id: 30,
-      title: "Modern React Patterns: From Hooks to Server Components",
-      excerpt: "Exploring the latest React patterns and best practices for building maintainable applications in 2024.",
-      category: "Web Development",
-      date: "2024-01-05",
-      readTime: "10 min read",
-      tags: ["React", "Hooks", "Server Components"],
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=600&h=300"
-    },
-    {
-      id: 40,
-      title: "Natural Language Processing with Transformers",
-      excerpt: "Understanding transformer architecture and implementing NLP models for text classification and generation.",
-      category: "AI/ML",
-      date: "2023-12-28",
-      readTime: "15 min read",
-      tags: ["NLP", "Transformers", "Python"],
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&h=300"
-    },
-    {
-      id: 50,
-      title: "System Design: Building Distributed Systems at Scale",
-      excerpt: "Key principles and patterns for designing scalable distributed systems with real-world examples.",
-      category: "System Design",
-      date: "2023-12-20",
-      readTime: "20 min read",
-      tags: ["System Design", "Distributed Systems", "Architecture"],
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&h=300"
-    }
   ];
 
-  const categories = ["All", "AI/ML", "Algorithms", "Web Development", "System Design","Git"];
+  const categories = [
+    "All",
+    "AI/ML",
+    "Algorithms",
+    "Web Development",
+    "System Design",
+    "Git",
+  ];
 
-  const filteredPosts = selectedCategory === "All" 
-    ? blogPosts 
-    : blogPosts.filter(post => post.category === selectedCategory);
+  const filteredPosts =
+    selectedCategory === "All"
+      ? blogPosts
+      : blogPosts.filter((post) => post.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
       <Header />
-      
+
       <main className="pt-20">
         {/* Hero Section */}
         <section className="py-20 bg-white dark:bg-gray-900">
@@ -141,7 +80,8 @@ const Blog = () => {
                 Tech Blog
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                Insights on software engineering, AI/ML, algorithms, and technology trends
+                Insights on software engineering, AI/ML, algorithms, and
+                technology trends
               </p>
             </div>
           </div>
@@ -176,7 +116,10 @@ const Blog = () => {
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {filteredPosts.map((post) => (
-                  <Card key={post.id} className="group hover:shadow-lg transition-shadow">
+                  <Card
+                    key={post.id}
+                    className="group hover:shadow-lg transition-shadow"
+                  >
                     <div className="aspect-video overflow-hidden rounded-t-lg">
                       <img
                         src={post.image}
@@ -215,7 +158,11 @@ const Blog = () => {
                       </div>
                       <div className="flex flex-wrap gap-2 mt-4">
                         {post.tags.map((tag) => (
-                          <Badge key={tag} variant="outline" className="text-xs">
+                          <Badge
+                            key={tag}
+                            variant="outline"
+                            className="text-xs"
+                          >
                             {tag}
                           </Badge>
                         ))}
