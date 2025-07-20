@@ -18,7 +18,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <Helmet>
-          <title>Your Name - AI/ML Enthusiast</title>
+          <title>Saken Rai - AI/ML Enthusiast</title>
           <meta
             name="description"
             content="Personal portfolio of @raisaken, a full-stack developer transitioning to AI/ML, showcasing projects in Python, machine learning, and data science."

@@ -41,6 +41,16 @@ const Blog = () => {
       tags: ["Deep Learning", "Machine Learning"],
       image: "https://i.imghippo.com/files/mJM9533eUo.png",
     },
+    {
+      id: 3,
+      title: "Obsession",
+      excerpt: "",
+      category: "Life",
+      date: "2024-07-18",
+      readTime: "2 min read",
+      tags: ['Life',"Success"],
+      image:""
+    },
     // {
     //   id: 10,
     //   title: "",
@@ -60,6 +70,7 @@ const Blog = () => {
     "Web Development",
     "System Design",
     "Git",
+    "Life"
   ];
 
   const filteredPosts =

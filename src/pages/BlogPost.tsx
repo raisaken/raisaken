@@ -52,12 +52,12 @@ const BlogPost = () => {
         <div
           dangerouslySetInnerHTML={{
             __html: `-> Python(Numpy, Pandas, Matplotlib) 
-            -> Math(Linear Algebra, Calculsus, Stat and Probability ) 
+            -> Math(Linear Algebra, Calculus, Stat and Probability ) 
             -> ML(Supervised, Unsupervised, Clustering, Regression) 
             -> CNN, RNN with TensorFlow, PyTorch, scikit-learn 
             -> Domain Specialization(NLP, Computer Vision, Gen AI) 
             -> Projects(Chatbots, Image Classifiers, ML models)
-            -> Portfolio Building, Lot of Kaggle Competition`,
+            -> Portfolio Building, Lots of Kaggle Competition`,
           }}
         />
       ),
@@ -66,6 +66,22 @@ const BlogPost = () => {
       readTime: "2 min read",
       tags: ["Machine Learning", "Deep Learning"],
       image: "https://i.imghippo.com/files/mJM9533eUo.png",
+    },
+    {
+      id: 3,
+      title: "Obsession",
+      content: (
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `The magic behind <b>SUCCESS</b>`,
+          }}
+        />
+      ),
+      category: "Life",
+      date: "2025-07-11",
+      readTime: "2 min read",
+      tags: ['Life',"Success"],
+      image: "",
     },
   ];
 
