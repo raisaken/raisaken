@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "How to create Professional Github Readme Profile (Step By Step)",
+    "excerpt": "Create Github Readme Profile using Github Profile readme Generator for Professional looking Github Resume. In this Blog we will learn to create next level Github profile using online github readme profile Generator. Having a professional Github portfolio can help you a lot to showcase your skills, add contacts and even get a remote Jobs.",
+    "category": "Git",
+    "date": "2025-07-06",
+    "readTime": "2 min read",
+    "tags": [
+      "Tools & Utilities",
+      "Open Source",
+      "Web Development",
+      "DevOps",
+      "Git",
+      "Documentation",
+      "Project Management",
+      "Beginner Tutorials"
+    ],
+    "content": "<div>Create Github Readme Profile using Github Profile readme Generator for Professional looking Github Resume. In this Blog we will learn How to create next level Github profile using online github readme profile Generator. Having a professional Github portfolio can help you a lot to showcase your skills, add contacts and even get a remote Jobs.<br><br>Github Readme Generator: <a style=\"color: blue;\" href=\"https://rahuldkjain.github.io/gh-profile-readme-generator/\" target=\"_blank\">https://rahuldkjain.github.io/gh-profile-readme-generator/</a><br><br>Github Profile Readme Generator: <a style=\"color: blue;\" href=\"https://profile-readme-generator.com/\" target=\"_blank\">https://profile-readme-generator.com/</a><br><br>Github Repo with all cool Portfolio: <a style=\"color: blue;\" href=\"https://github.com/abhisheknaiidu/awesome-github-profile-readme\" target=\"_blank\">https://github.com/abhisheknaiidu/awesome-github-profile-readme</a></div>",
+    "image": "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/github-profile-readme-generator.gif"
+  },
+  {
+    "id": 2,
+    "title": "AI engineer Roadmap",
+    "excerpt": "AI engineer Roadmap",
+    "category": "AI/ML",
+    "date": "2024-07-11",
+    "readTime": "2 min read",
+    "tags": [
+      "Deep Learning",
+      "Machine Learning"
+    ],
+    "content": "-> Python (Numpy, Pandas, Matplotlib)<br>-> Math (Linear Algebra, Calculus, Stat and Probability)<br>-> ML (Supervised, Unsupervised, Clustering, Regression)<br>-> CNN, RNN with TensorFlow, PyTorch, scikit-learn<br>-> Domain Specialization (NLP, Computer Vision, Gen AI)<br>-> Projects (Chatbots, Image Classifiers, ML models)<br>-> Portfolio Building, Lots of Kaggle Competition",
+    "image": "https://i.imghippo.com/files/mJM9533eUo.png"
+  },
+  {
+    "id": 3,
+    "title": "Obsession",
+    "excerpt": "",
+    "category": "Life",
+    "date": "2024-07-18",
+    "readTime": "2 min read",
+    "tags": [
+      "Life",
+      "Success"
+    ],
+    "content":"",
+    "image": "https://i.ibb.co/Kx2ztHrS/obsession.png"
+  }
+]

@@ -5,63 +5,12 @@ import { Footer } from "@/components/portfolio/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
+import data from '../data/blog/blog.json'; 
+// import data from './data/data';
+
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
-
-  const blogPosts = [
-    {
-      id: 1,
-      title: "How to create Professional Github Readme Profile (Step By Step)",
-      excerpt:
-        "Create Github Readme Profile using Github Profile readme Generator for Professional looking Github Resume. In this Blog we will learn to create next level Github profile using online github readme profile Generator. Having a professional Github portfolio can help you a lot to showcase your skills, add contacts and even get a remote Jobs.",
-      category: "Git",
-      date: "2025-07-06",
-      readTime: "2 min read",
-      tags: [
-        "Tools & Utilities",
-        "Open Source",
-        "Web Development",
-        "DevOps",
-        "Git",
-        "Documentation",
-        "Project Management",
-        "Beginner Tutorials",
-      ],
-      image:
-        "https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/github-profile-readme-generator.gif",
-    },
-    {
-      id: 2,
-      title: "AI engineer Roadmap",
-      excerpt: "AI engineer Roadmap",
-      category: "AI/ML",
-      date: "2024-07-11",
-      readTime: "2 min read",
-      tags: ["Deep Learning", "Machine Learning"],
-      image: "https://i.imghippo.com/files/mJM9533eUo.png",
-    },
-    {
-      id: 3,
-      title: "Obsession",
-      excerpt: "",
-      category: "Life",
-      date: "2024-07-18",
-      readTime: "2 min read",
-      tags: ['Life',"Success"],
-      image:""
-    },
-    // {
-    //   id: 10,
-    //   title: "",
-    //   excerpt: "",
-    //   category: "AI/ML",
-    //   date: "2024-07-11",
-    //   readTime: "2 min read",
-    //   tags: ["Deep Learning", "Machine Learning"],
-    //   image:""
-    // },
-  ];
 
   const categories = [
     "All",
@@ -70,13 +19,13 @@ const Blog = () => {
     "Web Development",
     "System Design",
     "Git",
-    "Life"
+    "Life",
   ];
 
   const filteredPosts =
     selectedCategory === "All"
-      ? blogPosts
-      : blogPosts.filter((post) => post.category === selectedCategory);
+      ? data
+      : data.filter((post) => post.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
@@ -84,7 +33,7 @@ const Blog = () => {
 
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-white dark:bg-gray-900">
+        {/* <section className="py-20 bg-white dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white mb-6">
@@ -96,7 +45,7 @@ const Blog = () => {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Category Filter */}
         <section className="py-8 bg-gray-50 dark:bg-gray-800">
@@ -146,9 +95,11 @@ const Blog = () => {
                           {new Date(post.date).toLocaleDateString()}
                         </div>
                       </div>
-                      <CardTitle className="line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                        {post.title}
-                      </CardTitle>
+                      <Link to={`/blog/${post.id}`}>
+                        <CardTitle className="line-clamp-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                          {post.title}
+                        </CardTitle>
+                      </Link>
                     </CardHeader>
                     <CardContent>
                       <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
