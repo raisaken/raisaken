@@ -5,7 +5,7 @@
 
 - 👨‍💻 All of my projects are available at [https://raisaken.com.np/](https://raisaken.com.np/)
 
-- 📝 I regularly write articles on [https://raisaken.com.np/blog](https://raisaken.com.np/blog)
+- 📝 I regularly write articles on [https://raisaken.com.np/blog](https://raisaken.com.np/)
 
 - 💬 Ask me about **javascript, react, python, ai agents, automation**
 
